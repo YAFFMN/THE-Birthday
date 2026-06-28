@@ -538,7 +538,7 @@ body {
       <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">العربية</button>
     </div>
     <div class="letter-date" id="letter-date"></div>
-    <div class="letter-salutation" id="letter-salutation">My Dearest,</div>
+    <div class="letter-salutation" id="letter-salutation">DAREEN,</div>
     <div class="letter-rose">❀</div>
     <div class="letter-body" id="letter-body">
       <!-- ✏️ EDIT YOUR BIRTHDAY MESSAGE HERE -->
@@ -567,16 +567,16 @@ body {
 ════════════════════════════════════════════════════════════════════ */
 const CONFIG = {
   /* English birthday message */
-  message: `Happy Birthday, my love! 🌸\n\nToday, the universe paused for a moment just to celebrate you — and honestly, it makes perfect sense. You are one of those rare souls who makes every room warmer, every moment richer, and every memory more golden simply by being in it.\n\nMay this year carry you gently toward everything you have been dreaming of. May laughter find you in the quietest corners, and may joy follow you like sunlight follows flowers.\n\nThank you for existing, for shining, and for being exactly, wonderfully you.`,
+  message: `Today,is the third year \n And after all those years I can say those was the best in my life a person that I'm lucky to meet \n Happy Birthday have fun with the day even if it is at the worse time , stay Optimestic ,Happy ,and lovable as you are `,
 
   /* English signature */
   signature: "With all my love ❤️",
 
   /* ✏️ Arabic birthday message */
-  messageAr: `عيد ميلاد سعيد، يا أغلى الناس! 🌸\n\nاليوم توقّف الكون لحظةً ليحتفل بك — وهذا بالضبط ما تستحقّه. أنتَ من أولئك النفوس النادرة التي تجعل كلّ مكان أدفأ، وكلّ لحظة أجمل، وكلّ ذكرى أكثر بريقاً بمجرّد وجودك فيها.\n\nأتمنى أن تحملكَ هذه السنة برفقٍ نحو كلّ ما حلمتَ به. أتمنى أن يجدك الضحكُ في أهدأ اللحظات، وأن تتبعك الفرحةُ كما تتبع الشمسُ الأزهار.\n\nشكراً لأنّك موجود، لأنّك تتألّق، ولأنّك أنتَ — بكلّ ما فيك.`,
+  messageAr: `نسيبنا من الانجليزي حاولت لكن فشلت \n طبعا النهردا يوم مهم جدا فالسنة الواحد بيستناه عشان يقولك كل سنة و انت طيبة \n تلت سنين يمكن كانو صعبين حبتين بس كانو من الاحلى الصراحه دايما ببقى مبسوطلك يا دارين فاي وقت بتححقي في حاجه و الواحد بيبقى مستني انك تعملي حاجه عشان تكوني مبسوطة \n\n بتمنالك دايما الخير و بتمنى اني علي طول اكون شخص خفيف عليكي مش رخم يمكن مش لاقي كلام معبر او عارف اتكلم عمال بعبث \n بس فعليا النهردا عيد ملاد احلا واحده فالدنيا فكل سنة و انت طيبه❤️`,
 
   /* ✏️ Arabic signature */
-  signatureAr: "بكلّ محبّتي ❤️",
+  signatureAr: "بكل حب كل سنة و انت طيبه ",
 
   /* Balloon emojis */
   balloons: ["🎈","🎀","🎊","🎉","💜","🎈","🎈"],
@@ -603,7 +603,7 @@ function setLang(lang) {
     signEl.textContent = CONFIG.signatureAr;
     signEl.classList.add('arabic');
     signEl.style.textAlign = 'left'; // signature on left for RTL feel
-    salEl.textContent = 'أعزّائي،';
+    salEl.textContent = 'دَارِين،';
     salEl.classList.add('arabic-salutation');
     salEl.classList.remove('letter-salutation');
   } else {
@@ -612,7 +612,7 @@ function setLang(lang) {
     signEl.textContent = CONFIG.signature;
     signEl.classList.remove('arabic');
     signEl.style.textAlign = '';
-    salEl.textContent = 'My Dearest,';
+    salEl.textContent = 'DAREEN,';
     salEl.classList.remove('arabic-salutation');
     salEl.classList.add('letter-salutation');
   }
