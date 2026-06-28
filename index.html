@@ -537,7 +537,7 @@ body {
       <button class="lang-btn active" id="btn-en" onclick="setLang('en')">English</button>
       <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">العربية</button>
     </div>
-    <div class="letter-date" id="letter-date"></div>
+    <div class="letter-date" id="letter-date">June 29, 2026</div>
     <div class="letter-salutation" id="letter-salutation">DAREEN,</div>
     <div class="letter-rose">❀</div>
     <div class="letter-body" id="letter-body">
@@ -576,7 +576,7 @@ const CONFIG = {
   messageAr: `نسيبنا من الانجليزي حاولت لكن فشلت \n طبعا النهردا يوم مهم جدا فالسنة الواحد بيستناه عشان يقولك كل سنة و انت طيبة \n تلت سنين يمكن كانو صعبين حبتين بس كانو من الاحلى الصراحه دايما ببقى مبسوطلك يا دارين فاي وقت بتححقي في حاجه و الواحد بيبقى مستني انك تعملي حاجه عشان تكوني مبسوطة \n\n بتمنالك دايما الخير و بتمنى اني علي طول اكون شخص خفيف عليكي مش رخم يمكن مش لاقي كلام معبر او عارف اتكلم عمال بعبث \n بس فعليا النهردا عيد ملاد احلا واحده فالدنيا فكل سنة و انت طيبه❤️`,
 
   /* ✏️ Arabic signature */
-  signatureAr: "بكل حب كل سنة و انت طيبه ",
+  signatureAr: "بكل حب كل سنة و انت طيبه ❤️",
 
   /* Balloon emojis */
   balloons: ["🎈","🎀","🎊","🎉","💜","🎈","🎈"],
@@ -622,8 +622,8 @@ function setLang(lang) {
 setLang('en');
 
 // Set date
-const now = new Date();
-dateEl.textContent = now.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+// const now = new Date();
+// dateEl.textContent = now.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
 
 /* ─── THREE.JS STARFIELD ─────────────────────────────────────────── */
 (function initThree() {
